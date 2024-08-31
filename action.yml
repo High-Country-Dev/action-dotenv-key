@@ -1,0 +1,12 @@
+name: "Dotenv Key Loader"
+description: "Loads appropriate dontenv key based on branch or pr"
+inputs:
+  github-token:
+    description: "GitHub token"
+    required: true
+  dotenv-me:
+    description: "DOTENV_ME secret"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
